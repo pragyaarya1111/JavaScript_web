@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+a{
+    color:blue;
+    margin: 12rem;
+}
+a:hover{
+    color:black;
+}
+body{
+    height: 739px;
+    width: 100%;
+
+    background-image: url("C:\\Users\\91933\\Pictures\\Saved Pictures\\Picture1.jpg");
+
+    background-repeat:repeat;
+
+}
+.login{
+    margin: 8rem 35rem;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 4px 7px 100px rgb(14, 10, 10);
+    max-height: fit-content;
+    border: 2px solid rgb(6, 3, 3);
+    padding: 2rem 3rem;
+    backdrop-filter: blur(10px);
+}
+input{
+    width: 99%;
+    padding: 1rem;
+    border: 2px solid rgb(19, 9, 9);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma,sans-serif;
+    font-weight: 800;
+    margin: 1rem 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+input[type="text"],input[type="email"],input[type="password"]
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+input[type="text"]:hover,input[type="email"]:hover,input[type="password"]:hover
+{
+    border: 2px solid blue;
+}
+input::placeholder
+{
+  color:black;
+  font-family: Verdana, Geneva, Tahoma,sans-serif;
+  font-weight: bold;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    margin-top: -20px;
+}
+.input p
+{
+  text-align: center;
+  color: rgb(7, 3, 3);
+  font-size: 20px;
+}
+.fa-lock
+{
+  position: absolute;
+  top: 18.5rem;
+  left: 22rem;
+}
+.fa-user
+{
+    position: absolute;
+    top: 6.6rem;
+    left: 22rem;
+}
+.fa-envelope
+{
+    position: absolute;
+    top: 13.5rem;
+    left: 22rem;
+}
+.icons
+{
+    font-size: 20px;
+}
+.icons:hover{
+    background-color:white;
+    color: rgb(64, 117, 141);
+}
+input[type="submit"]
+{
+    background-color: #e864a8(171,41,41);
+    color: rgb(17, 8, 8);
+    font-size: 20px;
+    border-radius: 20px;
+}
+input[type="submit"]:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.other p
+{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+
+}
+.icons{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}

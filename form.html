@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial scale=1.0">
+    <meta charset="utf-8">
+    <title>My Customer</title>
+    <link rel="stylesheet" href="somethingg.css">
+    <script>
+        function validateForm() {
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var street = document.getElementById("street").value;
+            var city = document.getElementById("city").value;
+            var phone = document.getElementById("phone").value;
+            var state = document.getElementById("state").value;
+            var fax = document.getElementById("fax").value;
+            var zip = document.getElementById("zip").value;
+            var country = document.getElementById("country").value;
+
+
+
+            if (fname === "" || lname === "" || street === "" || city === "" || phone === "" || state === "" || fax === "" || zip === "" || country === "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+
+
+
+            if (phone.length !== 10 || isNaN(phone)) {
+                alert("Phone number should have 10 digits.");
+                return false;
+            }
+
+
+
+            if (zip.length !== 6 || isNaN(zip)) {
+                alert("Postal code should have 6 digits.");
+                return false;
+            }
+
+
+
+            if (fname.charAt(0) !== fname.charAt(0).toUpperCase() || lname.charAt(0) !== lname.charAt(0).toUpperCase()) {
+                alert("First letter of the first name and last name should be capitalized.");
+                return false;
+            }
+
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="customer">
+        <h1 align="center">Customer Details</h1><br><br><br>
+        <form method="POST" action="comments.pl" onsubmit="return validateForm()" target="_blank/_self" align="center">
+            <div class="input">
+                <table class="center" border="0" cellspacing="25">
+                    <tr>
+                        <th>CONTACT INFORMATION</th>
+                        <th>ADDRESS</th>
+                    </tr>
+                    <tr>
+                        <td><label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="First Name"></td>
+                        <td><label for="street">Street Address:</label><br>
+                            <input type="text" id="street" name="Street"><br>
+                            <input type="text" id="street" name="Street"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="Last Name"></td>
+                        <td><label for="city">City:</label><br>
+                            <input type="text" id="city" name="City"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone">Phone Number:</label><br>
+                            <input type="text" id="phone" name="Phone"></td>
+                        <td><label for="state">State/Province:</label><br>
+                            <input type="text" id="state" name="State"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fax">Fax:</label><br>
+                            <input type="text" id="fax" name="Fax"></td>
+                        <td><label for="zip">Zip/Postal Code:</label><br>
+                            <input type="text" id="zip" name="Postal Code"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label for="country">Country:</label><br>
+                            <input type="text" id="country" name="Country"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

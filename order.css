@@ -1,0 +1,50 @@
+body {
+    font-family: Outfit, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+
+.container {
+    border:0cap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+
+.tick-mark img {
+    width: 100px;
+    height: auto;
+}
+
+
+.confirmation-message {
+    margin-left: 20px;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.visit-us {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.visit-us p {
+    font-size: 16px;
+}
+
+
+.visit-us img {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}

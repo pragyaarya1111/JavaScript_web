@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Booking Form</title>
+<link rel="stylesheet" href="book.css">
+<link rel="stylesheet" href="features.css">
+</head>
+<body>
+  <nav>
+
+
+    <div class="elements">
+      <table>
+        <tr>
+          <td><a style="text-decoration:none; color:white;" href="index.html"><img src="image/logo.jpeg" class="logo"alt="">
+          </a></td>
+          <td><a style="text-decoration:none; color:white;" href="index.html" class="thf">The Hazelnut Factory
+          </a></td>
+
+        </tr>
+
+      </table>
+
+      </div>
+
+      <ul>
+        <li><a style="text-decoration:none; color:white;" href="book.html">BOOK</a></li>
+        <li><a style="text-decoration:none; color:white;" href="MENU.html">MENU</a></li>
+        <li><a style="text-decoration:none; color:white;" href="aboutus.html">ABOUT US</a></li>
+        <li><a style="text-decoration:none; color:white;" href="contact.html">CONTACT US</a></li>
+        <li><a style="text-decoration:none; color:white;" href="login.html">LOG IN</a>
+        </li>
+      </ul>
+
+
+    </nav>
+
+<div class="container">
+    <table>
+        <tr>
+            <td class="image-container">
+                <img src="image/book.jpeg" alt="Couple in Cafe">
+            </td>
+            <td class="form-container">
+                <h1 align="center">Book a Table</h1>
+                <form id="tableBookingForm" action="confirmation.html" onsubmit="submitForm(event)">
+                    <label for="name"><b>Name:</b></label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="phoneNumber"><b>Phone Number:</b></label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+
+                    <label for="date"><b>Date of Booking:</b></label>
+                    <input type="date" id="date" name="date" required><br>
+
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="time"><b>Time Slot:</b></label>
+                    <select id="time" name="time" required>
+                        <option value="">Select a time slot</option>
+                        <option value="morning">Morning (9am - 12pm)</option>
+                        <option value="afternoon">Afternoon (12pm - 3pm)</option>
+                        <option value="evening">Evening (3pm - 6pm)</option>
+                        <option value="night">Night (6pm - 9pm)</option>
+                    </select>
+                    <br>
+                    <button type="submit">Book Table</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    function submitForm(event) {
+        event.preventDefault();
+
+        window.location.href = "order.html";
+    }
+</script>
+<footer>
+  <div class="row">
+    <div class="col">
+      <img src="image/logo1.png" alt="" class="logo">
+
+    </div>
+    <div class="col">
+      <h3>INFORMATION</h3>
+      <p>Privacy Policy</p>
+      <p>Return Policy</p>
+      <p>Shipping Policy</p>
+      <p>Terms of Services</p>
+
+    </div>
+    <div class="col">
+      <p>Menu</p>
+      <p>Delivery</p>
+      <p>Contact us</p>
+      <p>Login</p>
+    </div>
+    <div class="col">
+      <p>FOLLOW US</p>
+      <div class="socialmedia">
+        <a href="https://www.instagram.com/thf.india/"><img src="image/instagram.png" alt="" class="insta">
+        </a>
+        <a href="https://www.facebook.com/thflucknow/"><img src="image/facebook.png" alt="" class="insta">
+        </a>
+        <a href="https://twitter.com/?lang=en"><img src="image/twitter.png" alt="" class="insta">
+        </a>
+        <a href="https://in.linkedin.com/company/the-hazelnut-factory"><img src="image/link.png" alt="" class="insta">
+        </a>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>
